@@ -17,8 +17,6 @@
 
 //Problema:
 //Criar um programa que recebe os nomes e notas de 2 alunos que realizaram uma tarefa em conjunto
-//
-
 
 //stdlibi.h para poder usar o rand()
 //Cstring para que o usuário possa inserir seu nome (string)
@@ -38,10 +36,9 @@ int main(){
 
     string nome1, nome2;
     int i, nota1, nota2, resultado, h1, h2;
-    string mat1[2][2];
 
     //Utilização da string
-    cout <<"****AVALIAÇÃO DE TRABALHO EM DUPLA****" << endl;
+    cout <<"****AVALIACAO DE TRABALHO EM DUPLA****" << endl;
     cout <<"Insira o nome do primeiro aluno: " << endl;
     getline(cin, nome1);
     cout <<"Insira nota do primeiro aluno (0-5): " << endl;
@@ -74,7 +71,6 @@ int main(){
     h2 = rand() % 10 + 1;
     cout << "A nota que a dupla realmente merece eh: " << h2 << endl;
 
-
     //Chama a primeira função 'soma'
     resultado = soma(nota1, nota2);
 
@@ -86,15 +82,12 @@ int main(){
     troca(nota1,nota2);
     cout << "Depois de chamar a funcao: \nNota do primeiro ="<<nota1<<"\nNota do segundo ="<<nota2<<endl;
 
-
     return 0;
 }
 int soma( int nota1, int nota2){
 
     return nota1 + nota2;
 }
-
-
 void troca(int &nota1, int &nota2){
         int temp;
         temp=nota1;
